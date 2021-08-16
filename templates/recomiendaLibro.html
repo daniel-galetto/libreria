@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Libros</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-light blur ">
+        <img src="{{url_for('static', filename='img/itec.png')}}" width="80" height="80" class="d-inline-block align-top" alt="" loading="lazy">
+        <p class="Righteous m-3" id="title">BIBLIOTECA ITEC RIO CUARTO</p> 
+    
+        <div class="nav" id="titulo">
+      <input type="checkbox">
+      <span></span>
+      <span></span>
+      <span></span>
+        <div class="menu">
+            <li><a href="{{url_for('nuevoLibro')}}">AGREGAR LIBRO</a></li>
+            <li><a href="{{url_for('mostrarLibros')}}">HOME</a></li>
+        </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+    <h1>RECOMENDACIONES</h1>
+    </div>
+    <br><br>
+    <div class="container">
+        <br>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+                <div class="card-front"></div>
+                <div class="card-back">
+                    <h2>JUEGO DE TRONOS<br>
+                    <br>
+                    <span>Juego de tronos es una novela de fantasía escrita por el autor estadounidense George R. R. Martin en 1996 y ganadora del premio Locus a la mejor novela de fantasía en 1997. Se trata de la primera entrega de la serie de gran popularidad Canción de hielo y fuego. </span></h2>
+                </div>
+            </div>
+        
+          </div>
+          <div class="col">
+            <div class="card">
+                <div class="card-front2"></div>
+                <div class="card-back">
+                    <h2>YO ROBOT<br>
+                    <br>
+                    <span>Yo, robot, de Isaac Asimov, es un volumen publicado en 1950 en el que se recogen una serie de relatos enlazados por la temática y el hilo argumental.</span></h2>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card">
+                <div class="card-front1"></div>
+                <div class="card-back">
+                    <h2>EL ULTIMO DESEO<br>
+                    <br>
+                    <span>El último deseo (en polaco, Ostatnie życzenie) es una de las dos antologías de cuentos (siendo el otro La espada del destino - Miecz przeznaczenia) que preceden la serie principal de la Saga de Geralt de Rivia, creada por el escritor polaco Andrzej Sapkowski.</span></h2>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        <br>    
+    </div>
+
+    <br><br>
+    <div class="blur">
+        <h1>PROXIMAMENTE</h1>
+        <br>
+        <h1>VENTA DE POSTER</h1>
+    </div>
+    <br>
+    <div class=" container">
+    <p class="star">STAR WARS</p>
+    
+    <div class="container4 ">  
+
+        <div class="card1">
+            <img class="imga" src="../static/img/darth-vader.jpg">
+        </div>
+        <div class="card1">
+            <img class="imga" src="../static/img/sith.jpg">
+        </div>
+        <div class="card1">
+            <img class="imga" src="../static/img/troopers.png">
+        </div>
+        <div class="card1">
+            <img class="imga" src="../static/img/yoda.jpg">
+        </div>
+        <div class="card1">
+            <img class="imga" src="../static/img/saber.jpg">
+        </div>
+        <div class="card1">
+            <img class="imga" src="../static/img/halcon.jpg">
+        </div>
+    </div>    
+    <h1>SIGUENOS EN NUESTRAS REDES</h1>
+        <div class="container1">
+            <a href="https://es-la.facebook.com/iTecRioCuarto" target="_blank"><i class="fa fa-facebook fa-4x icon m-1"></i></a>
+            <i class="fa fa-twitter fa-4x icon m-1"></i>
+            <a href="https://www.instagram.com/itecriocuarto/?hl=es-la" target="_blank"><i class="fa fa-instagram fa-4x icon m-1"></i></a>
+            <i class="fa fa-youtube fa-4x icon m-1"></i>
+        </div>
+    </div>
+    <br><br>
+    <div class="float fixed">
+        <a  href="#titulo">
+            <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle-fill" fill="red" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+        </a>
+    </div>
+    <br><br>
+       
+    
+
+    <br><br><br><br><br><br>
+      <!-- COMIENZO DEL FOOTER -->
+    <nav class="fixed-bottom footer">
+        <br>    
+        <p>© Copyright 2021 Copyright.ar - Todos los Derechos Reservados - Legal - power by DG</p>
+        <br>
+    </nav> <!--  FIN DEL FOOTER -->  
+  
+
+</body>
+</html>

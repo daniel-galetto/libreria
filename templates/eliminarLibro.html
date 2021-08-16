@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Libros</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-light blur">
+        <img src="{{url_for('static', filename='img/itec.png')}}" width="80" height="80" class="d-inline-block align-top " alt="" loading="lazy">
+        <p class="Righteous m-3" id="title">BIBLIOTECA ITEC RIO CUARTO</p> 
+    </nav>   
+           
+  <br><br><br><br><br><br>  
+  
+    <div class="container"> 
+        <br>
+        <h3> Estás seguro que querés eliminar el libro <h1>{{libro.titulo}} ?</h1> </h3>
+            <div class="flex">
+                <form action="#" method='post'>
+                    <button type="submit" class="btn btn-light m-3 botones">ELIMINAR</button>
+                </form>
+                <a href='{{ url_for("mostrarLibros") }}'>
+                    <button class="btn btn-light m-3 botones naranja">CANCELAR</button>
+                </a>
+            </div>    
+    </div>
+
+    <br><br><br><br><br><br>
+    <!-- COMIENZO DEL FOOTER -->
+    <nav class="fixed-bottom footer">
+      <br>    
+      <p>© Copyright 2021 Copyright.ar - Todos los Derechos Reservados - Legal - power by DG</p>
+      <br>
+      <div id="sfc6wfs1hjpfrkw9znsyfuj3qnbzxlwrxac"></div><script type="text/javascript" src="https://counter3.stat.ovh/private/counter.js?c=6wfs1hjpfrkw9znsyfuj3qnbzxlwrxac&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas com"><img src="https://counter3.stat.ovh/private/contadorvisitasgratis.php?c=6wfs1hjpfrkw9znsyfuj3qnbzxlwrxac" border="0" title="contador de visitas com" alt="contador de visitas com"></a></noscript>
+  </nav> <!--  FIN DEL FOOTER -->  
+
+</body>
+</html>        
